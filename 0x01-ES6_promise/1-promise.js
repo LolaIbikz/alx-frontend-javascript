@@ -1,4 +1,4 @@
-Latest commitexport default function getFullResponseFromAPI(success) {
+export default function getFullResponseFromAPI(success) {
   return new Promise((resol, fail) => {
     if (success) {
       resol({
@@ -9,3 +9,4 @@ Latest commitexport default function getFullResponseFromAPI(success) {
       fail(new Error('The fake API is not working currently'));
     }
   });
+}
